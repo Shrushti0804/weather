@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" class="search-bar" placeholder="Search">
+            <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg></button>
+        </div>
+        <div class="weather loading">
+            <h2 class="city">Weather in Mumbai</h2>
+            <div class="temp"><h1>35°C</h1></div>
+            <div class="flex">
+                <img src="https://openweathermap.org/img/wn/04d.png" alt="" class="icon"/>
+                <div class="description">Cloudy</div>
+            </div>
+            <div class="humidity">Humidity : 50%</div>
+            <div class="wind">Wind Speed :6.2 km/hr</div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
+
+
+<!-- 
+    Difficulty faced : before entering the city , default details used to show up. 
+    For that i used css property of visibility : hidden 
+    And to hide the default information - document.querySelector(".weather").classList.remove("loading")
+ -->
